@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner Sc = new Scanner(System.in);
+        int a=Sc.nextInt();
+        int b,c=0,d=a;
+        while(a>0)
+        {
+            b=a%10;
+            c=c+b*b*b;
+            a=a/10;
+        }
+        if(d==c)
+        {
+            System.out.println("Armstrong num");
+        }
+        else{
+        System.out.println("Not a Armstrong num");
+        }
+        
+    }       
+}
